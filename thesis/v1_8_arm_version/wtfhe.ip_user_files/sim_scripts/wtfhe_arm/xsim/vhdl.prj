@@ -1,0 +1,36 @@
+vhdl xil_defaultlib  \
+"../../../bd/wtfhe_arm/ip/wtfhe_arm_axi_bram_ctrl_0_0/sim/wtfhe_arm_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/wtfhe_arm/ip/wtfhe_arm_axi_smc_0/bd_0/ip/ip_1/sim/bd_11e1_psr_aclk_0.vhd" \
+"../../../bd/wtfhe_arm/ip/wtfhe_arm_rst_ps7_0_50M_0/sim/wtfhe_arm_rst_ps7_0_50M_0.vhd" \
+"../../../bd/wtfhe_arm/ip/wtfhe_arm_axi_gpio_0_0/sim/wtfhe_arm_axi_gpio_0_0.vhd" \
+"../../../bd/wtfhe_arm/ip/wtfhe_arm_BOOTSTRAPPING_ARM_1_0/src/xbip_dsp48_macro_0_1/sim/xbip_dsp48_macro_0.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/CONST.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/ACCUMULATOR.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/ADDR_REG.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/COUNTER.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/EXTENDED_COUNTER.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/EXTERNAL_PRODUCT.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/LATCH.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/LSM.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/MATRIX_ACC.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/MATRIX_MULT.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/MULT_CONTROLLER.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/NEGACYCLIC_MEM.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/POLY_ADD.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/POLY_EXP.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/POLY_MPX.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/POLY_MULT.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/POLY_REG.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/POLY_SPLIT.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/SAMPLE_EXTRACT.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/TLWE_REG.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/TLWE_ROUNDING.vhd" \
+"../../../bd/wtfhe_arm/ipshared/2ee9/sources_1/new/BOOTSTRAPPING_ARM.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../bd/wtfhe_arm/ip/wtfhe_arm_BOOTSTRAPPING_ARM_1_0/sim/wtfhe_arm_BOOTSTRAPPING_ARM_1_0.vhd" \
+"../../../bd/wtfhe_arm/sim/wtfhe_arm.vhd" \
+
+nosort

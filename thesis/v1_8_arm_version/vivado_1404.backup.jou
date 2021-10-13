@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Aug 15 13:40:46 2021
+# Process ID: 1404
+# Current directory: C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8120 C:\Users\DarkWave\Desktop\WTFHE\wtfhe-fpga\v1_8_arm_version\wtfhe.xpr
+# Log file: C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/vivado.log
+# Journal file: C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/BOOTSTRAPPING_ARM.vhd w ]
+add_files C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/BOOTSTRAPPING_ARM.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/ARM_WRAPPER.vhd w ]
+add_files C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/ARM_WRAPPER.vhd
+update_compile_order -fileset sources_1
+file mkdir C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd w ]
+add_files -fileset sim_1 C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_ARM [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+set_property file_type {VHDL 2008} [get_files  C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/SAMPLE_EXTRACT.vhd]
+update_compile_order -fileset sources_1
+set_property file_type {VHDL 2008} [get_files  C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/BOOTSTRAPPING_ARM.vhd]
+set_property file_type {VHDL 2008} [get_files  C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/ARM_WRAPPER.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_BOOTSTRAP [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source TB_BOOTSTRAP.tcl
+close_sim
+set_property file_type {VHDL 2008} [get_files  C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_ARM [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation

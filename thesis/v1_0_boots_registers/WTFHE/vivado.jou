@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Aug 17 22:45:30 2021
+# Process ID: 12848
+# Current directory: C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_0_boots_registers/WTFHE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18452 C:\Users\DarkWave\Desktop\WTFHE\wtfhe-fpga\v1_0_boots_registers\WTFHE\WTFHE.xpr
+# Log file: C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_0_boots_registers/WTFHE/vivado.log
+# Journal file: C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_0_boots_registers/WTFHE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_0_boots_registers/WTFHE/WTFHE.xpr

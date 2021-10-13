@@ -1,0 +1,15 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use work.const.all;
+
+-- useless
+entity VECTORACCUMULATOR is
+end VECTORACCUMULATOR;
+
+architecture VECTORACCUMULATOR_BODY of VECTORACCUMULATOR is
+
+begin
+
+
+end VECTORACCUMULATOR_BODY;
+

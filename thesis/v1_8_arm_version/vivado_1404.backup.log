@@ -1,0 +1,290 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Aug 15 13:40:46 2021
+# Process ID: 1404
+# Current directory: C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8120 C:\Users\DarkWave\Desktop\WTFHE\wtfhe-fpga\v1_8_arm_version\wtfhe.xpr
+# Log file: C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/vivado.log
+# Journal file: C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_7_final' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.ip_user_files', nor could it be found using path 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_7_final/wtfhe.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Applications/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 1036.078 ; gain = 0.000
+update_compile_order -fileset sources_1
+close [ open C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/BOOTSTRAPPING_ARM.vhd w ]
+add_files C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/BOOTSTRAPPING_ARM.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/ARM_WRAPPER.vhd w ]
+add_files C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/ARM_WRAPPER.vhd
+update_compile_order -fileset sources_1
+file mkdir C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd w ]
+add_files -fileset sim_1 C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd
+update_compile_order -fileset sim_1
+set_property top TB_ARM [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Applications/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_ARM' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/matrix_in.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/matrix_in.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_ARM_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj TB_ARM_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/WTFHE/CONST.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/ARM_WRAPPER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ARM_WRAPPER'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_ARM'
+ERROR: [VRFC 10-2989] 'hread' is not declared [C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd:81]
+ERROR: [VRFC 10-2989] 'hread' is not declared [C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd:102]
+ERROR: [VRFC 10-2989] 'hread' is not declared [C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd:116]
+ERROR: [VRFC 10-2989] 'tlwe_in' is not declared [C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd:117]
+ERROR: [VRFC 10-2989] 'hread' is not declared [C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd:133]
+ERROR: [VRFC 10-3782] unit 'tb_arm_body' ignored due to previous errors [C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd:11]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd' ignored due to errors
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1036.078 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property file_type {VHDL 2008} [get_files  C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/SAMPLE_EXTRACT.vhd]
+update_compile_order -fileset sources_1
+set_property file_type {VHDL 2008} [get_files  C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/BOOTSTRAPPING_ARM.vhd]
+set_property file_type {VHDL 2008} [get_files  C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/ARM_WRAPPER.vhd]
+set_property top TB_BOOTSTRAP [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Applications/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_BOOTSTRAP' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/matrix_in.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/matrix_in.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_BOOTSTRAP_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+"xvhdl --incr --relax -prj TB_BOOTSTRAP_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/WTFHE/CONST.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/ip/xbip_dsp48_macro_0/sim/xbip_dsp48_macro_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_macro_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/WTFHE/ACCUMULATOR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ACCUMULATOR'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/new/ADDR_REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ADDR_REG'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/new/BOOTSTRAPPING_RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BOOTSTRAPPING_RAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/WTFHE/COUNTER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'COUNTER'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/EXTENDED_COUNTER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EXTENDED_COUNTER'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/new/EXTERNAL_PRODUCT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'EXTERNAL_PRODUCT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/WTFHE/LATCH.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LATCH'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/WTFHE/LSM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LSM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/new/MATRIX_ACC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MATRIX_ACC'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/MATRIX_MULT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MATRIX_MULT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/WTFHE/MULT_CONTROLLER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MULT_CONTROLLER'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/WTFHE/NEGACYCLICMEM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'NEGACYCLICMEM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/new/POLY_ADD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'POLY_ADD'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/new/POLY_EXP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'POLY_EXP'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/new/POLY_MPX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'POLY_MPX'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/POLY_MULT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'POLY_MULT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/new/POLY_REG.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'POLY_REG'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/POLY_SPLIT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'POLY_SPLIT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/SAMPLE_EXTRACT.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SAMPLE_EXTRACT'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/imports/new/TLWE_ROUNDING.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TLWE_ROUNDING'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/imports/sim_1/new/TB_BOOTSTRAP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_BOOTSTRAP'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+"xelab -wto bc8af310a0c34f82aa564e00fbe784ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_dsp48_wrapper_v3_0_4 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_dsp48_macro_v3_0_17 -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_BOOTSTRAP_behav xil_defaultlib.TB_BOOTSTRAP xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Applications/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto bc8af310a0c34f82aa564e00fbe784ed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_dsp48_wrapper_v3_0_4 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_dsp48_macro_v3_0_17 -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TB_BOOTSTRAP_behav xil_defaultlib.TB_BOOTSTRAP xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.const
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_dsp48_macro_v3_0_17.xbip_dsp48_macro_v3_0_17_viv_com...
+Compiling package xbip_dsp48_macro_v3_0_17.xbip_dsp48_macro_v3_0_17_pkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture sample_extract_body of entity xil_defaultlib.SAMPLE_EXTRACT [sample_extract_default]
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling architecture extended_counter_body of entity xil_defaultlib.EXTENDED_COUNTER [extended_counter_default]
+Compiling architecture tlwe_rounding_body of entity xil_defaultlib.TLWE_ROUNDING [tlwe_rounding_default]
+Compiling architecture poly_exp_body of entity xil_defaultlib.POLY_EXP [poly_exp_default]
+Compiling architecture poly_mpx_body of entity xil_defaultlib.POLY_MPX [poly_mpx_default]
+Compiling architecture poly_reg_body of entity xil_defaultlib.POLY_REG [poly_reg_default]
+Compiling architecture poly_add_body of entity xil_defaultlib.POLY_ADD [poly_add_default]
+Compiling architecture poly_split_body of entity xil_defaultlib.POLY_SPLIT [poly_split_default]
+Compiling architecture accumulator_body of entity xil_defaultlib.ACCUMULATOR [accumulator_default]
+Compiling architecture mult_controller_body of entity xil_defaultlib.MULT_CONTROLLER [mult_controller_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_sclr...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_sclr...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(preg=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_sclr...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_sclr...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_sclr...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_sclr...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0_17.xbip_dsp48_macro_synth [\xbip_dsp48_macro_synth(c_xdevic...]
+Compiling architecture synth of entity xbip_dsp48_macro_v3_0_17.xbip_dsp48_macro_v3_0_17_viv [\xbip_dsp48_macro_v3_0_17_viv(c_...]
+Compiling architecture xilinx of entity xbip_dsp48_macro_v3_0_17.xbip_dsp48_macro_v3_0_17 [\xbip_dsp48_macro_v3_0_17(c_xdev...]
+Compiling architecture xbip_dsp48_macro_0_arch of entity xil_defaultlib.xbip_dsp48_macro_0 [xbip_dsp48_macro_0_default]
+Compiling architecture negacyclicmem_body of entity xil_defaultlib.NEGACYCLICMEM [negacyclicmem_default]
+Compiling architecture lsm_body of entity xil_defaultlib.LSM [lsm_default]
+Compiling architecture counter_body of entity xil_defaultlib.COUNTER [counter_default]
+Compiling architecture poly_mult_body of entity xil_defaultlib.POLY_MULT [poly_mult_default]
+Compiling architecture latch_body of entity xil_defaultlib.LATCH [latch_default]
+Compiling architecture matrix_mult_body of entity xil_defaultlib.MATRIX_MULT [matrix_mult_default]
+Compiling architecture external_product_body of entity xil_defaultlib.EXTERNAL_PRODUCT [external_product_default]
+Compiling architecture matrix_acc_body of entity xil_defaultlib.MATRIX_ACC [matrix_acc_default]
+Compiling architecture addr_reg_body of entity xil_defaultlib.ADDR_REG [addr_reg_default]
+Compiling architecture bootstrapping_ram_body of entity xil_defaultlib.BOOTSTRAPPING_RAM [bootstrapping_ram_default]
+Compiling architecture tb_bootstrap_body of entity xil_defaultlib.tb_bootstrap
+Built simulation snapshot TB_BOOTSTRAP_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/xsim.dir/TB_BOOTSTRAP_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Aug 16 00:40:46 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 1036.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '24' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_BOOTSTRAP_behav -key {Behavioral:sim_1:Functional:TB_BOOTSTRAP} -tclbatch {TB_BOOTSTRAP.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source TB_BOOTSTRAP.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module TB_BOOTSTRAP.uut.ram.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_BOOTSTRAP_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:35 . Memory (MB): peak = 1037.543 ; gain = 1.465
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property file_type {VHDL 2008} [get_files  C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd]
+set_property top TB_ARM [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Applications/Vivado/2020.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_ARM' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/ram.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/matrix_in.dat'
+INFO: [SIM-utils-43] Exported 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/matrix_in.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_ARM_vlog.prj"
+"xvhdl --incr --relax -prj TB_ARM_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sources_1/new/ARM_WRAPPER.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ARM_WRAPPER'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_ARM'
+ERROR: [VRFC 10-2989] 'tlwe_in' is not declared [C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd:111]
+ERROR: [VRFC 10-3782] unit 'tb_arm_body' ignored due to previous errors [C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd:11]
+INFO: [VRFC 10-3070] VHDL file 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.srcs/sim_1/new/TB_ARM.vhd' ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/DarkWave/Desktop/WTFHE/wtfhe-fpga/v1_8_arm_version/wtfhe.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 16 00:49:04 2021...
